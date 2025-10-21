@@ -598,7 +598,7 @@
       ? {
           tag: 'ok',
           label: '✅ RCQ em faixa saudável',
-          msg: 'Seu acúmulo de gordura abdominal está controlado para o seu perfil. Mantenha constância na alimentação e no treino de força para consolidar esse resultado.'
+          msg: 'Seu acúmulo de gordura abdominal está controlado para o seu perfil. Mantenha constância na alimentação e suplementação individualizada para consolidar esse resultado.'
         }
       : {
           tag: 'bad',
@@ -628,7 +628,7 @@
   } else if (imc < 25) {
     return { tag:'ok', label:'Peso saudável', msg:'Mantenha refeições equilibradas e treinos regulares para preservar massa magra.' };
   } else if (imc < 30) {
-    return { tag:'warn', label:'Sobrepeso', msg:'Ajustes na alimentação + treino de força ajudam a reduzir gordura e melhorar marcadores metabólicos.' };
+    return { tag:'warn', label:'Sobrepeso', msg:'Ajustes na alimentação + suplementação individualizada ajudam a reduzir gordura e melhorar marcadores metabólicos.' };
   } else {
     return { tag:'bad', label:'Obesidade', msg:'Atenção: um plano estruturado pode reduzir riscos e melhorar sua disposição no dia a dia.' };
   }
