@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teste Cintura/Quadril – +Maravilhosa</title>
+  <meta name="description" content="Descubra seu risco metabólico em 2 minutos com o teste de relação cintura/quadril."/>
+
+  <!-- Meta Pixel com eventID para deduplicação -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '595481199331116');
+  (function(){
+    function uuidv4(){
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+        var r=Math.random()*16|0, v=c==='x'?r:(r&0x3|0x8);
+        return v.toString(16);
+      });
+    }
+    window.metaEventId = uuidv4();
+  })();
+  fbq('track', 'PageView', {}, { eventID: window.metaEventId });
+  </script>
+  <noscript>
+    <img alt="fb pixel" height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=595481199331116&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- /Meta Pixel -->
+
+  <style>
+    :root{
+      --rose-50:#fff7f9; --rose-100:#ffe9f0; --rose-200:#ffd3df; --rose-300:#ffb1c5;
+      --rose-400:#ff8fb0; --rose-500:#ff6b97; --rose-600:#e85580;
+      --ink-900:#111827; --ink-700:#2b2e38; --ink-500:#4b4f5c; --ink-300:#7a7f91;
+      --ok:#10b981; --warn:#f59e0b; --bad:#ef4444;
+      --card-shadow:0 4px 12px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+      color:var(--ink-700);
+      background:linear-gradient(160deg,var(--rose-50) 0%,#fff 50%);
+      min-height:100vh;
+      padding-bottom:40px;
+    }
+    .wrap{max-width:640px;margin:0 auto;padding:16px}
+
+    .hero{
+      background:linear-gradient(135deg,var(--rose-500),var(--rose-600));
+      border-radius:20px;
+      padding:24px 20px;
+      color:#fff;
+      text-align:center;
+      box-shadow:0 8px 24px rgba(255,107,151,.25);
+      margin-bottom:20px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size:26px;
+      font-weight:800;
+      line-height:1.2;
+    }
+    .hero p{
+      margin:0;
+      font-size:15px;
+      line-height:1.5;
+      opacity:.95;
+    }
+    .hero-icon{
+      font-size:48px;
+      margin-bottom:12px;
+      display:block;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:16px;
+      padding:20px;
+      box-shadow:var(--card-shadow);
+      margin-bottom:16px;
+    }
+    .card h2{
+      margin:0 0 16px;
+      font-size:20px;
+      font-weight:700;
+      color:var(--ink-900);
+    }
+    .card h3{
+      margin:0 0 12px;
+      font-size:18px;
+      font-weight:700;
+      color:var(--ink-900);
+    }
+
+    label{
+      display:block;
+      font-weight:600;
+      margin:0 0 6px;
+      font-size:14px;
+      color:var(--ink-700);
+    }
+    input,select,button{
+      width:100%;
+      padding:14px 16px;
+      border-radius:12px;
+      border:2px solid #e7e7ef;
+      font-size:16px;
+      font-family:inherit;
+      transition:all .2s;
+    }
+    input:focus,select:focus{
+      outline:none;
+      border-color:var(--rose-400);
+      box-shadow:0 0 0 3px rgba(255,107,151,.1);
+    }
+    .field{margin-bottom:16px}
+    .row{display:flex;gap:12px;margin-bottom:16px}
+    .row .field{flex:1;margin-bottom:0}
+
+    .btn{
+      background:var(--rose-500);
+      color:#fff;
+      font-weight:700;
+      border:none;
+      cursor:pointer;
+      transition:.2s;
+      font-size:17px;
+      padding:16px;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(255,107,151,.3);
+      -webkit-tap-highlight-color:transparent;
+    }
+    .btn:active{
+      transform:scale(.98);
+      box-shadow:0 2px 8px rgba(255,107,151,.3);
+    }
+
+    .btn-gradient {
+      background: linear-gradient(135deg, #ff2d55, #ff8a00);
+      color: #fff !important;
+      border: 0;
+      border-radius: 12px;
+      padding: 16px;
+      font-weight: 700;
+      box-shadow: 0 8px 20px rgba(255, 80, 0, .25);
+      transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+      display: inline-block;
+      text-decoration: none;
+      outline: none;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .btn-gradient:hover { 
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(255, 80, 0, .33);
+      filter: saturate(1.05);
+    }
+    .btn-gradient:active {
+      transform: scale(.98);
+      box-shadow: 0 6px 16px rgba(255, 80, 0, .24);
+    }
+
+    .tag{
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:20px;
+      font-size:13px;
+      font-weight:700;
+    }
+    .tag.ok{background:#ecfdf5;color:var(--ok)}
+    .tag.warn{background:#fffbeb;color:var(--warn)}
+    .tag.bad{background:#fef2f2;color:var(--bad)}
+
+    .result-box{
+      background:linear-gradient(135deg,#f9fafb,#fff);
+      border:2px dashed var(--rose-200);
+      border-radius:16px;
+      padding:20px;
+      margin-top:20px;
+    }
+    .ratio-display{
+      font-size:42px;
+      font-weight:900;
+      color:var(--rose-500);
+      text-align:center;
+      margin-bottom:12px;
+      line-height:1;
+    }
+    .status-msg{
+      text-align:center;
+      margin-bottom:16px;
+    }
+
+    .tips{
+      background:var(--rose-50);
+      border-radius:12px;
+      padding:16px;
+      margin:16px 0 0;
+    }
+    .tips li{
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:8px;
+      color:var(--ink-500);
+    }
+    .tips li:last-child{margin-bottom:0}
+
+    .instruction-box{
+      background:#f9fafb;
+      border-left:4px solid var(--rose-400);
+      padding:16px;
+      border-radius:8px;
+      margin:16px 0;
+    }
+    .instruction-box p{
+      margin:0;
+      font-size:14px;
+      line-height:1.6;
+      color:var(--ink-500);
+    }
+    .instruction-box strong{color:var(--ink-700)}
+
+    .toast{
+      position:fixed;
+      bottom:20px;
+      left:50%;
+      transform:translateX(-50%) translateY(100px);
+      background:var(--ink-900);
+      color:#fff;
+      padding:14px 20px;
+      border-radius:12px;
+      opacity:0;
+      pointer-events:none;
+      transition:all .3s cubic-bezier(.4,0,.2,1);
+      font-size:15px;
+      font-weight:600;
+      box-shadow:0 8px 24px rgba(0,0,0,.3);
+      z-index:1000;
+      max-width:calc(100% - 32px);
+    }
+    .toast.show{
+      opacity:1;
+      pointer-events:auto;
+      transform:translateX(-50%) translateY(0);
+    }
+
+    .hide{display:none}
+    .muted{color:var(--ink-300);font-size:13px;line-height:1.4}
+    .footer{
+      text-align:center;
+      color:var(--ink-300);
+      font-size:12px;
+      margin-top:32px;
+      padding:16px;
+    }
+
+    @media (min-width:640px){
+      .wrap{padding:24px}
+      h1{font-size:32px}
+      .hero{padding:32px}
+      .card{padding:28px}
+    }
+
+    .hero-logo {
+  width: 110px;         /* tamanho do logo */
+  height: auto;
+  margin-bottom: 12px; /* mesmo espaçamento que o ícone tinha */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Hero -->
+    <section class="hero">
+      <img src="logo.png" alt="+Maravilhosa" class="hero-logo" />
+
+      <h1>Teste Cintura/Quadril</h1>
+      <p>Avalie seu risco metabólico em 2 minutos. Descubra se a gordura abdominal está afetando sua saúde.</p>
+    </section>
+
+    <!-- Formulário de Dados -->
+    <div class="card">
+      <h2>📋 Passo 1: Seus Dados</h2>
+      <form id="leadForm" autocomplete="on" novalidate>
+        <div class="field">
+          <label for="nome">Nome completo*</label>
+          <input id="nome" name="nome" required placeholder="" />
+        </div>
+
+        <div class="field">
+          <label for="email">Seu melhor e-mail*</label>
+          <input id="email" name="email" type="email" required placeholder="" />
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="idade">Idade</label>
+            <input id="idade" name="idade" type="number" min="10" max="100" placeholder="" />
+          </div>
+          <div class="field">
+            <label for="sexoLead">Sexo*</label>
+            <select id="sexoLead" name="sexoLead" required>
+              <option value="">Selecione</option>
+              <option value="F">Feminino</option>
+              <option value="M">Masculino</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="whats">WhatsApp</label>
+          <input id="whats" name="whats" inputmode="tel" placeholder="" />
+        </div>
+
+        <div class="field">
+          <label for="cidade">Cidade/Estado</label>
+          <input id="cidade" name="cidade" placeholder="" />
+        </div>
+
+        <button type="submit" class="btn">✨ Liberar Teste Agora</button>
+      </form>
+
+      <div id="afterLead" class="hide" style="margin-top:16px;text-align:center">
+        <span class="tag ok">✅ Dados recebidos com sucesso!</span>
+      </div>
+    </div>
+
+    <!-- Card do Teste -->
+    <div id="testCard" class="card hide">
+      <h2>📐 Passo 2: Medições</h2>
+
+      <div class="instruction-box">
+        <p><strong>Como medir corretamente:</strong></p>
+        <p>🔹 <strong>Cintura:</strong> Parte mais fina do abdômen (geralmente na altura do umbigo)</p>
+        <p>🔹 <strong>Quadril:</strong> Parte mais larga dos glúteos</p>
+        <p style="margin-top:8px;font-size:13px">💡 Use fita métrica, mantenha postura relaxada e não prenda a respiração</p>
+      </div>
+
+      <form id="whrForm" novalidate>
+        <div class="field">
+          <label for="nomeResult">Nome completo*</label>
+          <input id="nomeResult" name="nomeResult" required placeholder="" />
+        </div>
+
+        <div class="field">
+          <label for="emailResult">E-mail*</label>
+          <input id="emailResult" name="emailResult" type="email" required placeholder="" />
+        </div>
+
+        <div class="field">
+          <label for="sexo">Confirme seu sexo</label>
+          <select id="sexo" name="sexo" required>
+            <option value="">Selecione</option>
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="peso">Peso (kg)</label>
+            <input id="peso" name="peso" type="number" min="30" max="300" step="0.1" placeholder="Ex: 65.5" required />
+          </div>
+          <div class="field">
+            <label for="altura">Altura (cm)</label>
+            <input id="altura" name="altura" type="number" min="100" max="250" step="0.1" placeholder="Ex: 165" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="cintura">Cintura (cm)</label>
+            <input id="cintura" name="cintura" type="number" min="30" max="200" step="0.1" placeholder="Ex: 75.5" required />
+          </div>
+          <div class="field">
+            <label for="quadril">Quadril (cm)</label>
+            <input id="quadril" name="quadril" type="number" min="40" max="250" step="0.1" placeholder="Ex: 98.0" required />
+          </div>
+        </div>
+
+        <button class="btn" type="submit">🧮 Calcular Meu Resultado</button>
+      </form>
+
+      <!-- Resultado -->
+      <div id="result" class="result-box hide">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+          <div style="text-align:center">
+            <div style="font-size:14px;font-weight:600;color:var(--ink-500);margin-bottom:4px">RCQ</div>
+            <div class="ratio-display" id="ratioLine" style="font-size:36px;margin:0">–</div>
+          </div>
+          <div style="text-align:center">
+            <div style="font-size:14px;font-weight:600;color:var(--ink-500);margin-bottom:4px">IMC</div>
+            <div class="ratio-display" id="imcLine" style="font-size:36px;margin:0">–</div>
+          </div>
+        </div>
+        
+        <div id="statusLine" style="margin-bottom:12px"></div>
+        <div id="imcStatus" style="margin-bottom:12px"></div>
+
+        <div class="tips">
+          <li><strong>RCQ - Mulheres:</strong> Ideal abaixo de 0,80</li>
+          <li><strong>RCQ - Homens:</strong> Ideal abaixo de 0,95</li>
+          <li><strong>IMC:</strong> 18,5-24,9 (saudável) | 25-29,9 (sobrepeso) | ≥30 (obesidade)</li>
+          <li>📊 Valores elevados indicam maior risco de doenças cardíacas, diabetes e gordura no fígado</li>
+          <li>💪 Mesmo com peso normal, RCQ alto sugere gordura visceral</li>
+        </div>
+
+        <!-- CTA Black Friday (aparece APÓS o resultado) -->
+        <div id="bfBox" class="hide" style="margin-top:20px;padding-top:20px;border-top:2px dashed var(--rose-200)">
+          <p id="bfMsg" style="margin:0 0 16px;font-size:15px;line-height:1.5;text-align:center"></p>
+          <a id="bfBtn" class="btn-gradient" href="#" target="_blank" rel="noopener">
+            Ver oferta Black Friday
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Interpretação -->
+    <div class="card">
+      <h3>🎯 Como Interpretar</h3>
+      <div style="background:var(--rose-50);padding:16px;border-radius:12px;margin-bottom:12px">
+        <p style="margin:0 0 8px;font-weight:600;color:var(--ink-900)">👩 Mulheres</p>
+        <p style="margin:0;font-size:14px"><span class="tag ok">Ideal</span> Menor que 0,80</p>
+        <p style="margin:8px 0 0;font-size:14px"><span class="tag bad">Atenção</span> Maior ou igual a 0,80</p>
+      </div>
+      <div style="background:#f9fafb;padding:16px;border-radius:12px">
+        <p style="margin:0 0 8px;font-weight:600;color:var(--ink-900)">👨 Homens</p>
+        <p style="margin:0;font-size:14px"><span class="tag ok">Ideal</span> Menor que 0,95</p>
+        <p style="margin:8px 0 0;font-size:14px"><span class="tag bad">Atenção</span> Maior ou igual a 0,95</p>
+      </div>
+      <p class="muted" style="margin:16px 0 0">⚠️ RCQ elevado está associado a maior risco de doenças cardiovasculares, diabetes tipo 2, AVC e esteatose hepática (gordura no fígado), mesmo em pessoas com IMC normal.</p>
+    </div>
+
+    <div class="footer">
+      <p style="margin:0">💖 +Maravilhosa</p>
+      <p style="margin:8px 0 0">Cuidando da sua saúde de forma completa</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwLAfu0wD4tB49h7p36Tx8WgDeQrfi9IQ-GCWQj_SyBkKPEZzniFhbQPbX1UiVE_YD-/exec";
+    const BF_URL = "https://renataborbanutri.github.io/blackmaravilhosas/";
+
+    function showToast(msg){
+      const t = document.getElementById('toast');
+      t.textContent = msg || "Ok";
+      t.classList.add('show');
+      setTimeout(()=>t.classList.remove('show'),2500);
+    }
+
+    function buildBfUrl(rcq, tag){
+      try{
+        const u = new URL(BF_URL);
+        u.searchParams.set('utm_source','whr_teste');
+        u.searchParams.set('utm_medium','cta');
+        u.searchParams.set('utm_campaign','blackfriday_2025');
+        u.searchParams.set('rcq', Number(rcq).toFixed(2));
+        u.searchParams.set('status', tag);
+        return u.toString();
+      }catch(_){
+        const qs = new URLSearchParams({
+          utm_source:'whr_teste',
+          utm_medium:'cta',
+          utm_campaign:'blackfriday_2025',
+          rcq: Number(rcq).toFixed(2),
+          status: tag
+        }).toString();
+        return BF_URL + (BF_URL.includes('?') ? '&' : '?') + qs;
+      }
+    }
+
+    function buildWhatsAppLink({
+    phone = '16153304647', // sem o "+"
+    nome, email, sexo, peso, altura, cintura, quadril, rcq, imc, klassRCQ, klassIMC
+  }){
+    const sexoTxt = sexo === 'F' ? 'Feminino' : (sexo === 'M' ? 'Masculino' : '');
+    const linhas = [
+      'Oi! Acabei de fazer o Teste Cintura/Quadril no site 💖',
+      'Quero orientação personalizada 👇',
+      '',
+      `Nome: ${nome}`,
+      `E-mail: ${email}`,
+      `Sexo: ${sexoTxt}`,
+      `Peso: ${peso} kg | Altura: ${altura} cm`,
+      `Cintura: ${cintura} cm | Quadril: ${quadril} cm`,
+      `RCQ: ${rcq.toFixed(2)} – ${klassRCQ.label.replace('✅ ','').replace('⚠️ ','')}`,
+      `IMC: ${imc.toFixed(2)} – ${klassIMC.label}`,
+      '',
+      'Pode me ajudar a começar agora? 🙏'
+    ];
+    const text = encodeURIComponent(linhas.join('\n'));
+    return `https://wa.me/${phone}?text=${text}`;
+  }
+
+    const leadFields = ["nome","email","whats","idade","cidade","sexoLead"];
+    
+    function saveLeadDraft(){
+      const data = {};
+      leadFields.forEach(id=>{
+        const el = document.getElementById(id);
+        if(!el) return;
+        data[id] = el.value;
+      });
+      window.leadDraft = data;
+    }
+    
+    function loadLeadDraft(){
+      if(!window.leadDraft) return;
+      leadFields.forEach(id=>{
+        const el = document.getElementById(id);
+        if(!el || !(id in window.leadDraft)) return;
+        el.value = window.leadDraft[id] || "";
+      });
+    }
+
+    async function postWebhook(doc){
+      if(!WEBHOOK_URL) return {ok:false};
+      try{
+        const body = new URLSearchParams();
+        Object.entries(doc||{}).forEach(([k,v])=> body.append(k, v==null? '' : String(v)));
+        await fetch(WEBHOOK_URL, {
+          method:'POST',
+          body,
+          mode:'no-cors',
+          keepalive:true
+        });
+        return {ok:true};
+      }catch(err){
+        console.warn('Webhook error:', err);
+        return {ok:false};
+      }
+    }
+
+    const leadForm = document.getElementById('leadForm');
+    const afterLead = document.getElementById('afterLead');
+    const testCard = document.getElementById('testCard');
+
+    leadForm.addEventListener('input', saveLeadDraft);
+    loadLeadDraft();
+
+    leadForm.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+
+      const nome = document.getElementById('nome').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const sexoLead = document.getElementById('sexoLead').value;
+
+      if(!nome || !email || !sexoLead){
+        showToast('⚠️ Preencha todos os campos obrigatórios');
+        return;
+      }
+
+      const doc = {
+        nome,
+        email,
+        whats: document.getElementById('whats').value.trim(),
+        idade: document.getElementById('idade').value.trim(),
+        cidade: document.getElementById('cidade').value.trim(),
+        sexo: sexoLead,
+        ts: new Date().toISOString()
+      };
+
+      afterLead.classList.remove('hide');
+      testCard.classList.remove('hide');
+      document.getElementById('sexo').value = sexoLead;
+      document.getElementById('nomeResult').value = nome;
+      document.getElementById('emailResult').value = email;
+      testCard.scrollIntoView({behavior:'smooth',block:'start'});
+      showToast('✅ Teste liberado! Role para baixo');
+
+      postWebhook(doc);
+    });
+
+    const whrForm = document.getElementById('whrForm');
+    const resultBox = document.getElementById('result');
+    const ratioLine = document.getElementById('ratioLine');
+    const imcLine = document.getElementById('imcLine');
+    const statusLine = document.getElementById('statusLine');
+    const imcStatus = document.getElementById('imcStatus');
+
+    function fmt(x){ return Number(x).toFixed(2); }
+
+    function classify(sexo, rcq){
+  if (sexo === 'F') {
+    return rcq < 0.80
+      ? {
+          tag: 'ok',
+          label: '✅ RCQ em faixa saudável',
+          msg: 'Seu acúmulo de gordura abdominal está controlado para o seu perfil. Mantenha constância na alimentação e no treino de força para consolidar esse resultado.'
+        }
+      : {
+          tag: 'bad',
+          label: '⚠️ RCQ acima do ideal',
+          msg: 'Há sinal de maior risco cardiometabólico. Ajustes na alimentação podem reduzir gordura visceral e proteger sua saúde.'
+        };
+  } else if (sexo === 'M') {
+    return rcq < 0.95
+      ? {
+          tag: 'ok',
+          label: '✅ RCQ em faixa saudável',
+          msg: 'Boa! A relação cintura/quadril está adequada. Pequenos upgrades na alimentação podem potencializar sua composição corporal.'
+        }
+      : {
+          tag: 'bad',
+          label: '⚠️ RCQ acima do ideal',
+          msg: 'Indício de maior risco cardiometabólico. Foque em reduzir a medida abdominal com um plano alimentar e controle hormonal através da alimentação.'
+        };
+  }
+  return { tag:'warn', label:'Selecione o sexo', msg:'' };
+}
+
+
+    function classifyIMC(imc){
+  if (imc < 18.5) {
+    return { tag:'warn', label:'Abaixo do peso', msg:'Avalie massa muscular e ingestão calórica.' };
+  } else if (imc < 25) {
+    return { tag:'ok', label:'Peso saudável', msg:'Mantenha refeições equilibradas e treinos regulares para preservar massa magra.' };
+  } else if (imc < 30) {
+    return { tag:'warn', label:'Sobrepeso', msg:'Ajustes na alimentação + treino de força ajudam a reduzir gordura e melhorar marcadores metabólicos.' };
+  } else {
+    return { tag:'bad', label:'Obesidade', msg:'Atenção: um plano estruturado pode reduzir riscos e melhorar sua disposição no dia a dia.' };
+  }
+}
+
+
+    whrForm.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+
+      const nomeResult = document.getElementById('nomeResult').value.trim();
+      const emailResult = document.getElementById('emailResult').value.trim();
+      const sexo = document.getElementById('sexo').value;
+      const peso = parseFloat(document.getElementById('peso').value);
+      const altura = parseFloat(document.getElementById('altura').value);
+      const c = parseFloat(document.getElementById('cintura').value);
+      const q = parseFloat(document.getElementById('quadril').value);
+
+      if(!nomeResult || !emailResult || !sexo || !peso || !altura || !c || !q || q<=0 || altura<=0 || peso<=0){
+        showToast('⚠️ Preencha todos os campos obrigatórios');
+        return;
+      }
+
+      const rcq = c / q;
+      const alturaMetros = altura / 100;
+      const imc = peso / (alturaMetros * alturaMetros);
+      
+      const klassRCQ = classify(sexo, rcq);
+      const klassIMC = classifyIMC(imc);
+
+      resultBox.classList.remove('hide');
+      ratioLine.textContent = fmt(rcq);
+      imcLine.textContent = fmt(imc);
+      statusLine.innerHTML = `<div style="text-align:center;margin-bottom:8px"><span class="tag ${klassRCQ.tag}">${klassRCQ.label}</span></div><p style="margin:0;font-size:14px;text-align:center">${klassRCQ.msg}</p>`;
+      imcStatus.innerHTML = `<div style="text-align:center"><span class="tag ${klassIMC.tag}">${klassIMC.label}</span> <span style="font-size:14px;color:var(--ink-500)">${klassIMC.msg}</span></div>`;
+
+ // CTA Black Friday -> agora WhatsApp com resultados
+const bfBox = document.getElementById('bfBox');
+const bfMsg = document.getElementById('bfMsg');
+const bfBtn = document.getElementById('bfBtn');
+
+if (bfBox && bfMsg && bfBtn) {
+  // Mensagem do bloco (mantém a lógica por perfil, se quiser)
+  if (klassRCQ.tag === 'bad' || klassIMC.tag === 'bad') {
+    bfMsg.innerHTML = '⚠️ Seus números pedem atenção. Fale comigo no <strong>WhatsApp</strong> para receber um passo a passo prático:';
+    bfBtn.textContent = 'Falar no WhatsApp agora';
+  } else if (klassRCQ.tag === 'ok' && klassIMC.tag === 'ok') {
+    bfMsg.innerHTML = '✅ Ótimo resultado! Se ainda sente dificuldade de perder gordura ou cansaço, chame no <strong>WhatsApp</strong> e eu te ajudo a ajustar proteína e refeições:';
+    bfBtn.textContent = 'Quero ajustar minha rotina';
+  } else {
+    bfMsg.innerHTML = '🚀 Você está no caminho! Com alguns ajustes dá pra acelerar muito. Fale no <strong>WhatsApp</strong> e receba orientações:';
+    bfBtn.textContent = 'Receber orientação no WhatsApp';
+  }
+
+  // Gera o link do WhatsApp com a mensagem + resultados
+  const waLink = buildWhatsAppLink({
+    phone: '16153304647',
+    nome: nomeResult,
+    email: emailResult,
+    sexo,
+    peso,
+    altura,
+    cintura: c,
+    quadril: q,
+    rcq,
+    imc,
+    klassRCQ,
+    klassIMC
+  });
+
+  bfBtn.href = waLink;               // abre a conversa no WhatsApp
+  bfBtn.target = '_blank';           // nova aba
+  bfBtn.rel = 'noopener';            // segurança
+  bfBox.classList.remove('hide');
+}
+
+
+      resultBox.scrollIntoView({behavior:'smooth',block:'center'});
+      showToast('✅ Resultado calculado!');
+
+      const payloadRes = {
+        nome: nomeResult,
+        email: emailResult,
+        sexo,
+        peso: peso,
+        altura: altura,
+        imc: Number(imc.toFixed(2)),
+        cintura: c,
+        quadril: q,
+        rcq: Number(rcq.toFixed(2)),
+        ts: new Date().toISOString()
+      };
+
+      postWebhook(payloadRes);
+    });
+  </script>
+</body>
+</html>
