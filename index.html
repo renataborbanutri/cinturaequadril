@@ -165,6 +165,34 @@
       box-shadow: 0 6px 16px rgba(255, 80, 0, .24);
     }
 
+    .btn-whatsapp {
+  background: linear-gradient(135deg, #25D366, #1EBE5D);
+  color: #fff !important;
+  border: 0;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(37, 211, 102, .25);
+  transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+.btn-whatsapp:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, .35);
+  filter: saturate(1.05);
+}
+.btn-whatsapp:active {
+  transform: scale(.98);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, .24);
+}
+
     .tag{
       display:inline-block;
       padding:6px 12px;
@@ -670,16 +698,18 @@ const bfMsg = document.getElementById('bfMsg');
 const bfBtn = document.getElementById('bfBtn');
 
 if (bfBox && bfMsg && bfBtn) {
+ // ajusta o estilo do botão
+  bfBtn.className = 'btn-whatsapp';
   // Mensagem do bloco (mantém a lógica por perfil, se quiser)
   if (klassRCQ.tag === 'bad' || klassIMC.tag === 'bad') {
     bfMsg.innerHTML = '⚠️ Seus números pedem atenção. Fale comigo no <strong>WhatsApp</strong> para receber um passo a passo prático:';
     bfBtn.textContent = 'Falar no WhatsApp agora';
   } else if (klassRCQ.tag === 'ok' && klassIMC.tag === 'ok') {
     bfMsg.innerHTML = '✅ Ótimo resultado! Se ainda sente dificuldade de perder gordura ou cansaço, chame no <strong>WhatsApp</strong> e eu te ajudo a ajustar proteína e refeições:';
-    bfBtn.textContent = 'Quero ajustar minha rotina';
+    bfBtn.textContent = 'Falar no WhatsApp agora';
   } else {
     bfMsg.innerHTML = '🚀 Você está no caminho! Com alguns ajustes dá pra acelerar muito. Fale no <strong>WhatsApp</strong> e receba orientações:';
-    bfBtn.textContent = 'Receber orientação no WhatsApp';
+    bfBtn.textContent = 'Falar no WhatsApp agora';
   }
 
   // Gera o link do WhatsApp com a mensagem + resultados
